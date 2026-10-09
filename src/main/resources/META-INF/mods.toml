@@ -1,0 +1,26 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+license = "MIT"
+
+[[mods]]
+modId = "tres_carver_bridge"
+version = "1.0.0"
+displayName = "Tres Carver Bridge"
+description = '''Fuerza a que los carvers de WF's Cave Overhaul se ejecuten en mundos Moderner Beta.'''
+
+[[mixins]]
+config = "tres_carver_bridge.mixins.json"
+
+[[dependencies.tres_carver_bridge]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.tres_carver_bridge]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,1.21)"
+ordering = "NONE"
+side = "BOTH"
